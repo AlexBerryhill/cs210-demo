@@ -12,6 +12,11 @@ class Balloon:
         self.volume_ml = 0
         pass
 
+    def fill(self, volume_ml):
+        self.volume_ml += volume_ml
+        if self.volume_ml > self.max_volume_ml:
+            self.pop()
+
     def decrease_air(self,delta_ms):
         pass
 
