@@ -15,6 +15,8 @@ balloon_list = []
 for i in range(10):
     balloon_list.append(clown.buy_balloon(random.randint(1,13)))
 
+print(clown)
+
 #while game is running
 first_balloon.update(current_time_ms())
 first_balloon.pop()
