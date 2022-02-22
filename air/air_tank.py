@@ -6,4 +6,4 @@ class AirTank(Tank):
         self._air_type = air_type
 
     def release_air(self, volume_ml):
-        return super.release(volume_ml)
+        return super().release(volume_ml)
