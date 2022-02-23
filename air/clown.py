@@ -6,13 +6,14 @@ from wallet import Wallet
 
 class Clown(Person):
     def __init__(self) -> None:
+        super().__init__()
         self.__tank = AirTank("Helium")
 
     def buy_balloon(self, cost) -> Balloon:
         balloon = Balloon("Red")
         balloon.fill(self.__tank.release_air(500))
-        super()._wallet.add_transaction(cost)
+        self._wallet.add_transaction(cost)
         return balloon
 
     def __str__(self) -> str:
-        return f"Clown ($ {super()._wallet.get_balance():.2f})"
+        return f"Clown ($ {self._wallet.get_balance():.2f})"
