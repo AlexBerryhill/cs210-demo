@@ -7,3 +7,6 @@ class Child(Person):
 
     def has_balloon(self) -> bool:
         return self.__has_balloon
+    
+    def speak(self):
+        return super().speak()+"\nI want a balloon?"

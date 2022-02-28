@@ -17,3 +17,6 @@ class Clown(Person):
 
     def __str__(self) -> str:
         return f"Clown ($ {self._wallet.get_balance():.2f})"
+
+    def speak(self):
+        return "Would you like a balloon?"

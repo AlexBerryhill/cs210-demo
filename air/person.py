@@ -9,3 +9,6 @@ class Person:
         
     # def get_wallet(self):
     #     return self._wallet
+
+    def speak(self) -> str:
+        return "Hi, my name is John."
